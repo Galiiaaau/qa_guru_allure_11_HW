@@ -57,7 +57,7 @@ public class StepsTest {
         step("Open the 'Issue' Tab", () -> {
             $("#issues-tab").click();
         });
-        step("Confirm that 'Issue' tab with a specified number exists" + ISSUE, () -> {
+        step("Confirm that 'Issue' tab with a specified issue exists", () -> {
             $(withText(ISSUE)).should(Condition.exist);
         });
     }

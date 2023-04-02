@@ -33,7 +33,7 @@ public class WebSteps {
         $("#issues-tab").click();
     }
 
-    @Step("Confirm that 'Issue' tab with a number {} exists")
+    @Step("Confirm that 'Issue' tab with an issue {issue} exists")
     public void shouldSeeIssueWithNumber(String issue) {
         $(withText(issue)).should(Condition.exist);
     }
